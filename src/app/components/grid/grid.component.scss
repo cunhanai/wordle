@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+input.letter {
+  width: 3rem;
+  height: 4rem;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+}
