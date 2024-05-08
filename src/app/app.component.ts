@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { GridComponent } from './components/grid/grid.component';
 import { NgFor } from '@angular/common';
+import { RodapeComponent } from './components/rodape/rodape.component';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,9 @@ import { NgFor } from '@angular/common';
   imports: [
     RouterOutlet,
     CabecalhoComponent,
-    NavbarComponent,
     GridComponent,
     NgFor,
+    RodapeComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

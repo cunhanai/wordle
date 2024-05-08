@@ -1,19 +1,20 @@
-<h2>Palavra para teste {{ palavra }}</h2>
-
-<div class="grid">
-  <div class="row" *ngFor="let tentativa of qtdTentativas">
-    <div *ngFor="let index of qtdLetras">
-      <input
-        class="letter"
-        type="text"
-        name=""
-        id=""
-        maxlength="1"
-        pattern="[A-Z]"
-        [(ngModel)]="palavrasTentativas[tentativa][index]"
-        [disabled]="disableLine(tentativa)"
-        [style]="'background-color: ' + setColor(tentativa, index)"
-      />
+<div class="container">
+  <h2>Descubra a palavra!</h2>
+  <div class="grid">
+    <div class="row" *ngFor="let tentativa of qtdTentativas">
+      <div *ngFor="let index of qtdLetras">
+        <input
+          class="letter"
+          type="text"
+          name=""
+          id=""
+          maxlength="1"
+          pattern="[A-Z]"
+          [(ngModel)]="palavrasTentativas[tentativa][index]"
+          [disabled]="disableLine(tentativa)"
+          [style]="'background-color: ' + setColor(tentativa, index)"
+        />
+      </div>
     </div>
   </div>
 
